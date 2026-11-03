@@ -3,6 +3,8 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import chatbotRoutes from "./routes/chatbotRoute.js";
 import cors from "cors";
+import dns from "dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const app = express();
 dotenv.config({});
@@ -26,7 +28,7 @@ mongoose
     dbName: "Chatbot_responce",
   })
   .then(() => console.log("MongoDB is connected...!"))
-  .catch((err) => console.log(err))
+  .catch((err) => console.log(err));
 
 // Esme Sender post karega routing se
 app.use("/bot/v1/", chatbotRoutes);

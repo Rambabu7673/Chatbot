@@ -509,6 +509,9 @@ export const Message = async (req, res) => {
         "Statistics is the branch of mathematics that deals with collecting, analyzing, interpreting, and presenting data. It helps in understanding trends, making predictions, and supporting decision making in fields like economics, business, and science.",
       "what is ipl":
         "The Indian Premier League (IPL) is a professional T20 cricket league started in 2008.\n• Played annually in India, franchise-based teams\n• Combines cricket + entertainment (biggest sports league in India)\n• Significant for sports business, sponsorships, brand endorsements\n• Example: Chennai Super Kings (CSK) & Mumbai Indians (MI) are top teams",
+
+      "you are good working ":
+        "Yes, I am a good working chatbot. I can answer questions, provide information, and keep you entertained.",
     };
 
     const normallizedText = text.toLowerCase().trim();
